@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-
+import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-*ijt5q8(z6o=@jr=-gycb@=dn!-4t9d=(#4%s_oxwhvinefo3q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -79,10 +80,10 @@ WSGI_APPLICATION = 'Re_assignment.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'postgres2',
-      'USER':'postgres',
-      'PASSWORD':'1234',
-      'HOST':'localhost',
+      'NAME':'d21eq4h0hmniav',
+      'USER':'pnmibshzwivcmo',
+      'PASSWORD':'7358406214c4337034fe51a9d8687f49bddb04301576134a2e6c6ae010d00718',
+      'HOST':'ec2-34-231-177-125.compute-1.amazonaws.com',
       'PORT':'5432',
    }
 }
